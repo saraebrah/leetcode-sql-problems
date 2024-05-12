@@ -1,3 +1,4 @@
+-- DESCRIPTION
 Table: Person
 
 +-------------+---------+
@@ -62,8 +63,8 @@ There is no address in the address table for the personId = 1 so we return null 
 addressId = 1 contains information about the address of personId = 2.
 
 
--- Solution
+
+-- SOLUTION
 SELECT firstName, lastName, city, state
 FROM Person 
 LEFT JOIN Address ON Person.personId = Address.personId
-
